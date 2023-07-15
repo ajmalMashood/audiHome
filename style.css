@@ -1,0 +1,154 @@
+html  {
+
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+.image-container {
+    width: 100%;
+    height: 480px;
+    margin-top: 35px;
+    position: relative;
+    display: inline-block;
+  transition: transform 0.3s;
+}
+.image-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 90%;
+    display: block;
+}
+  .image-container:hover {
+    transform: scale(1);
+  }
+
+.image-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+.image-text h1{
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+}.image-text p{
+    font-size: 21px;
+    line-height: 30px;
+    text-align: center; 
+}
+.card:hover{
+    cursor: pointer;
+}
+@keyframes zoom-in {
+  from {
+    transform: scale(1);
+    }
+  to {
+    transform: scale(1.2);
+    }
+}
+  
+  @keyframes zoom-out {
+    from {
+      transform: scale(1.2);
+    }
+  to {
+      transform: scale(1);
+    }
+}
+.zoomable-image-container {
+  position: relative;
+  overflow: hidden;
+}
+  .zoomable-image {
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .zoomable-image:hover {
+    animation-name: zoom-in;
+  }
+  
+  .zoomable-image:active {
+    animation-name: zoom-out;
+  }
+  .col-md-6 .btn {
+    background-color: transparent;
+    padding: 10px 100px;
+    border: 1px solid black;
+    color: black;
+    border-radius: 0%;
+  }
+  .custom-img {
+    width: 723px;
+    height: 406px;
+  }
+  .news:hover{
+    cursor: pointer;
+  }
+  .social-icons li {
+    display: inline-block;
+    margin-left: 8px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 20px;
+  }
+  .table-transparent {
+    background-color: transparent !important;
+  }
+  .white-line {
+    border-top: 1px solid white;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .custom-margin {
+    margin-left: 75px;
+  }
+  .list-unstyled li {
+    cursor: pointer;
+  }
+  .rightText{
+    margin-top: 5px;
+  }
+  .white-icon {
+    filter: invert(1);
+  }
+  .english-text {
+    cursor: pointer;
+  }
+  .paraText{
+    margin-left: 50px;
+  }
+  .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .col-md-12 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
